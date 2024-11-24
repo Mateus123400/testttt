@@ -1,0 +1,11 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "pattern": "/**",
+      "serve": "index.html",
+      "status": 200
+    }
+  ]
+}
