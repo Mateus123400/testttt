@@ -1,12 +1,7 @@
 name = "testttt"
-type = "webpack"
-account_id = ""
-workers_dev = true
 
 [site]
-bucket = "/"
-entry-point = "/"
+bucket = "./"
 
 [build]
 command = ""
-upload.format = "service-worker"

@@ -1,4 +1,6 @@
 name: testttt
 build:
   command: ""
-  output_directory: /
+  output_directory: ./
+environment:
+  NODE_VERSION: 16
