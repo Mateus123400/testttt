@@ -1,3 +1,24 @@
+// Verificar autenticação
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+const userName = document.getElementById('userName');
+const logoutBtn = document.getElementById('logoutBtn');
+const loginLink = document.getElementById('loginLink');
+
+if (!currentUser) {
+    window.location.href = 'login.html';
+} else {
+    userName.textContent = `Olá, ${currentUser.name}`;
+    logoutBtn.style.display = 'block';
+    loginLink.style.display = 'none';
+}
+
+// Função de logout
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    localStorage.removeItem('currentUser');
+    window.location.href = 'login.html';
+});
+
 // Inicializar o armazenamento local se não existir
 if (!localStorage.getItem('eggCollections')) {
     localStorage.setItem('eggCollections', JSON.stringify([]));
