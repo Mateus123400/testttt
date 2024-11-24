@@ -1,0 +1,4 @@
+name: testttt
+build:
+  command: ""
+  output_directory: /
